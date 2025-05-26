@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Kuchipudi Welcome & Contact Form</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<h1>Welcome to Kuchipudi World</h1>
+<p>Experience the grace and storytelling of one of India’s classical dances.</p>
+
+<button onclick="showSalutation()">Greet Me</button>
+<button onclick="openModal()">Learn More</button>
+<button onclick="openContactForm()">Contact Us</button>
+
+<!-- About Modal -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close-button" onclick="closeModal()">&times;</span>
+    <h2>About Kuchipudi</h2>
+    <p>Kuchipudi is a classical Indian dance form from Andhra Pradesh. It combines fast rhythms with fluid movements and dramatic storytelling.</p>
+  </div>
+</div>
+
+<!-- Contact Form Modal -->
+<div id="contactModal" class="modal">
+  <div class="modal-content">
+    <span class="close-button" onclick="closeContactForm()">&times;</span>
+    <h2>Contact Form</h2>
+    <form id="contactForm" novalidate>
+      <label for="name">Name:</label><br />
+      <input type="text" id="name" name="name" required />
+      <small class="error" id="nameError"></small><br />
+
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email" required />
+      <small class="error" id="emailError"></small><br />
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
