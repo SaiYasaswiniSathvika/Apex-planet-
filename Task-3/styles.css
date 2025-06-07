@@ -1,0 +1,44 @@
+body {
+  font-family: 'Georgia', serif;
+  background: linear-gradient(to right, #fff5f0, #ffe6fa);
+  text-align: center;
+  color: #4b2e2e;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #c2185b;
+}
+
+button {
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  margin: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.quiz, .api-data {
+  margin-top: 40px;
+  padding: 20px;
+  background: #fff0f5;
+  border-radius: 15px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 600px) {
+  h1 { font-size: 1.8em; }
+  button { font-size: 14px; padding: 10px 16px; }
+  .quiz, .api-data { padding: 15px; }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  h1 { font-size: 2.2em; }
+  button { font-size: 15px; padding: 11px 18px; }
+}

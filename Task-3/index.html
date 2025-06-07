@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kuchipudi Interactive Site</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Welcome to Kuchipudi Dance World</h1>
+  <p>Explore the vibrant classical dance form of Andhra Pradesh</p>
+
+  <!-- Quiz Section -->
+  <div class="quiz">
+    <h2>Kuchipudi Quiz</h2>
+    <p id="quizQuestion"></p>
+    <button onclick="checkQuizAnswer('A')" id="optionA"></button>
+    <button onclick="checkQuizAnswer('B')" id="optionB"></button>
+    <button onclick="checkQuizAnswer('C')" id="optionC"></button>
+    <p id="quizResult"></p>
+  </div>
+
+  <!-- API Section -->
+  <div class="api-data">
+    <h2>Want a Dance Joke? </h2>
+    <button onclick="getJoke()">Get a Joke</button>
+    <p id="jokeText"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
